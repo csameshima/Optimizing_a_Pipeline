@@ -247,11 +247,11 @@ No prediction activities were requested as part of the project.
 
 ### Performance Comparison
 
-![Performance Comparison](images/Performance comparison.png)
+![Performance Comparison](./images/Performance comparison.png)
 
 ### Architecture Comparison
 
-![Architecture Comparison](images/Architecture comparison.png)
+![Architecture Comparison](./images/Architecture comparison.png)
 
 
 ### Results Analysis

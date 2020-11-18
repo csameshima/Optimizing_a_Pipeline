@@ -84,14 +84,14 @@ The feature dataframe and the label dataframe were splitted into training and te
 An initial manual training of the model was performed in the [train Validation notebook](train Validation.ipynb), to test some values for the hyperparameters.  
 
 The requested training process for the project was performed in the [udacity-project-H notebook](udacity-project-H.ipynb) and the steps followed were:
-* 0. Setup.
-     * Initialize the Azure workspace an experiment.  
-     * Create the compute cluster.  
-* 1. Hyperparameter run.  
-     * Create the environment (dependencies).  
-     * Define the hyperparameter space and early stopping policy.  
-     * Submit and monitor the hyperdrive runs.  
-     * Find and register the best model.  
+* Setup.
+  * Initialize the Azure workspace an experiment.  
+  * Create the compute cluster.  
+* Hyperparameter run.  
+  * Create the environment (dependencies).  
+  * Define the hyperparameter space and early stopping policy.  
+  * Submit and monitor the hyperdrive runs.  
+  * Find and register the best model.  
 
 
 #### Definition of the Parameter Space
@@ -102,7 +102,7 @@ As stated previously, the hyperparameters to test were defined in the initial co
 * Maximum number of iterations (max_iter).  
 
 
-**Inverse of regularization strength.
+**Inverse of regularization strength.  **
 The default value for this hyperparameter is 1.  
 Lower values produce models that tend to under fit and higher values produce models that tend to over fit.  
 
@@ -111,7 +111,7 @@ The aim was to confirm the hypothesis that extreme values (0.01 and 100) would p
 Regarding values closer to the default value (0.1 and 10), the aim was to find if slightly under fitting/over fitting models would produce better *accuracy* results.  
 
 
-**Maximum number of iterations.
+**Maximum number of iterations.  **
 The default value for this hyperparameter is 100.  
 From the initial manual tests conducted, values lower that 5000 produced error messages, since the algorithm was not able to converge to a solution.  
 Therefore, higher values were selected: 5000, 10000, and 15000.  
@@ -204,15 +204,15 @@ The feature dataframe and the label dataframe were splitted into training and te
 
 The requested training process for the project was performed in the [udacity-project-A1](udacity-project-A1.ipynb) and [udacity-project-A2](udacity-project-A2.ipynb) notebooks.  
 The steps followed were:
-* 0. Setup.
-     * Initialize the Azure workspace an experiment.  
-     * Create the compute cluster.  
-     * Load and clean the dataset.  
-     * Create training and testing datasets.  
-* 1. AutoML run.  
-     * Set up AutoML configuration.  
-     * Submit and monitor the hyperdrive runs.  
-     * Find and save the best model.  
+* Setup.
+  * Initialize the Azure workspace an experiment.  
+  * Create the compute cluster.  
+  * Load and clean the dataset.  
+  * Create training and testing datasets.  
+* AutoML run.  
+  * Set up AutoML configuration.  
+  * Submit and monitor the hyperdrive runs.  
+  * Find and save the best model.  
 
 
 ### 5. Evaluation
@@ -229,7 +229,7 @@ For the second test, the best model used *MaxAbsScaler* and *XGBoostClassifier*.
      * Gradient tree boosting trains an ensemble of decision trees by training each tree to predict the prediction error of all previous trees in the ensemble.  
 
 The model explanation for the relevant features is in the [udacity-project-A2](udacity-project-A2.ipynb) notebook.  
-The model visualization using [Netron](https://github.com/lutzroeder/Netron) is in the best_model.onnx.png file.  
+The model visualization using [Netron](https://github.com/lutzroeder/Netron) is in the [best_model.onnx.png](images/best_model.onnx.png) file.  
 
 
 ### 6. Hyperparameter Tuning
@@ -247,20 +247,11 @@ No prediction activities were requested as part of the project.
 
 ### Performance Comparison
 
-| Approach              | Model                               | Accuracy   |
-| Hyperparameter tuning | C=10,   max_iter=5000, 10000, 15000 | 0.91654021 |
-|                       | C=0.1,  max_iter=5000, 10000, 15000 | 0.91603439 |
-|                       | C=100,  max_iter=5000, 10000, 15000 | 0.91573090 |
-|                       | C=0.01, max_iter=5000, 10000, 15000 | 0.91532625 |
-| AutoML                | MaxAbsScaler, XGBoostClassifier     | 0.92038442 |
-|                       | MaxAbsScaler, LightGBM              | 0.91947395 |
-|                       | MinMaxScaler, SGD                   | 0.91330298 |
-|                       | StandardScalerWrapper, SGD          | 0.91289833 |
-
+[Performance Comparison](images/Performance comparison.png)
 
 ### Architecture Comparison
 
-(images/Architecture comparison.png)
+[Architecture Comparison](images/Architecture comparison.png)
 
 
 ### Results Analysis

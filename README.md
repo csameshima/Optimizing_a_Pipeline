@@ -102,7 +102,7 @@ As stated previously, the hyperparameters to test were defined in the initial co
 * Maximum number of iterations (max_iter).  
 
 
-**Inverse of regularization strength.  **
+**Inverse of regularization strength.**  
 The default value for this hyperparameter is 1.  
 Lower values produce models that tend to under fit and higher values produce models that tend to over fit.  
 
@@ -111,7 +111,7 @@ The aim was to confirm the hypothesis that extreme values (0.01 and 100) would p
 Regarding values closer to the default value (0.1 and 10), the aim was to find if slightly under fitting/over fitting models would produce better *accuracy* results.  
 
 
-**Maximum number of iterations.  **
+**Maximum number of iterations.**  
 The default value for this hyperparameter is 100.  
 From the initial manual tests conducted, values lower that 5000 produced error messages, since the algorithm was not able to converge to a solution.  
 Therefore, higher values were selected: 5000, 10000, and 15000.  
@@ -247,11 +247,11 @@ No prediction activities were requested as part of the project.
 
 ### Performance Comparison
 
-[Performance Comparison](images/Performance comparison.png)
+![Performance Comparison](images/Performance comparison.png)
 
 ### Architecture Comparison
 
-[Architecture Comparison](images/Architecture comparison.png)
+![Architecture Comparison](images/Architecture comparison.png)
 
 
 ### Results Analysis

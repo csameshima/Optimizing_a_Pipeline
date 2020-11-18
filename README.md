@@ -53,7 +53,7 @@ A detailed explanation for the processes followed in each approach, is provided 
 ### 1. Gathering Data
 The dataset was provided as part of the project initial code at: https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv
 This dataset was used for both approaches (hyperparameter tuning and AutoML).  
-The analysis performed on the dataset is in the [Exploratory Data Analysis notebook](Exploratory Data Analysis.ipynb).  
+The analysis performed on the dataset is in the [Exploratory Data Analysis notebook](Exploratory%20Data%20Analysis.ipynb).  
 
 
 ### 2. Preparing the Data
@@ -64,7 +64,7 @@ The initial code provided for the project included a function to clean data (cle
 The cleaning function received a tabular dataset as input, cleaned it, and provided two dataframes: a feature dataset and a label dataset.  
 This code was used for both approaches (hyperparameter tuning and AutoML).  
 For the hyperparameter approach, the dataframes were used with no further changes.  
-The analysis and test performed on the code is in the [train Validation notebook](train Validation.ipynb).  
+The analysis and test performed on the code is in the [train Validation notebook](train%20Validation.ipynb).  
 
 
 ### 3. Choosing a Model
@@ -73,7 +73,7 @@ The initial code provided for the project in the [train.py](train.py) file defin
 * The hyperparameters to test: inverse of regularization strength (C) and maximum number of iterations (max_iter).  
 * The metric for evaluation: Accuracy.  
 
-The analysis and test performed on the code is in the [train Validation notebook](train Validation.ipynb).  
+The analysis and test performed on the code is in the [train Validation notebook](train%20Validation.ipynb).  
 
 
 ### 4. Training
@@ -81,7 +81,7 @@ The feature dataframe and the label dataframe were splitted into training and te
 * The proportion selected was 70-30, since it is the recommended value in most of the literature I found.
 * The random state was set to 0, to ensure that the same random combination is used between runs.
 
-An initial manual training of the model was performed in the [train Validation notebook](train Validation.ipynb), to test some values for the hyperparameters.  
+An initial manual training of the model was performed in the [train Validation notebook](train%20Validation.ipynb), to test some values for the hyperparameters.  
 
 The requested training process for the project was performed in the [udacity-project-H notebook](udacity-project-H.ipynb) and the steps followed were:
 * Setup.
@@ -155,7 +155,7 @@ No prediction activities were requested as part of the project.
 ### 1. Gathering Data
 The dataset was provided as part of the project initial code at: https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv
 This dataset was used for both approaches (hyperparameter tuning and AutoML).  
-The analysis performed on the dataset is in the [Exploratory Data Analysis notebook](Exploratory Data Analysis.ipynb).  
+The analysis performed on the dataset is in the [Exploratory Data Analysis notebook](Exploratory%20Data%20Analysis.ipynb).  
 
 
 ### 2. Preparing the Data
@@ -171,7 +171,7 @@ This code was used for both approaches (hyperparameter tuning and AutoML).
 For the AutoML approach, the dataframes were concatenated, since the training dataset must include the features and the label.  
 The concatenated training and test datasets were exported to csv files and loaded to a tabular dataset, so these could be used by AutoML.  
 
-The analysis and test performed on the code is in the [train Validation notebook](train Validation.ipynb).  
+The analysis and test performed on the code is in the [train Validation notebook](train%20Validation.ipynb).  
 
 
 ### 3. Choosing a Model
@@ -247,11 +247,11 @@ No prediction activities were requested as part of the project.
 
 ### Performance Comparison
 
-![Performance Comparison](./images/Performance_comparison.png)
+![Performance Comparison](images/Performance_comparison.png)
 
 ### Architecture Comparison
 
-![Architecture Comparison](./images/Architecture_comparison.png)
+![Architecture Comparison](images/Architecture_comparison.png)
 
 
 ### Results Analysis

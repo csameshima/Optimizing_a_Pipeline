@@ -251,6 +251,8 @@ No prediction activities were requested as part of the project.
 
 ### Architecture Comparison
 
+![Hyperparameter Tuning Architecture](images/Hyperparameter_Architecture.png)
+![AutoML Architecture](images/AutoML_Architecture.png)
 ![Architecture Comparison](images/Architecture_comparison.png)
 
 
